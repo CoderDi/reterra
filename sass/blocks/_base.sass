@@ -33,9 +33,274 @@
   position: relative
   width: 100%
   margin: 0 auto
-  max-width: 1380px
-  padding: 0 20px
+  max-width: 1060px
+  padding: 0 15px
 
 .site
   width: 100%
   overflow: hidden
+
+.header
+  position: fixed
+  z-index: 90
+  top: 0
+  left: 0
+  width: 100%
+  background: rgba(40, 128, 172, 0.61);
+  &-wrapper
+    max-width: 1750px
+    padding: 25px 15px
+  &-logo
+    flex-shrink: 0
+  &-menu
+    display: flex
+    flex-grow: 2
+    justify-content: flex-end
+    align-items: center
+    list-style: none
+    padding: 0
+    margin: 0
+    &-item
+      flex-shrink: 0
+      padding: 0 10px
+      &.active a
+        color: #FFCB2C;
+      a
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        color: #FFFFFF;
+        &:hover
+          color: #FFCB2C;
+  &-right
+    margin-left: 40px
+  &-search
+    &-btn
+      display: block
+      width: 30px
+      height: 30px
+      flex-shrink: 0
+      background: url(../images/icons.svg#search) no-repeat center
+      background-size: contain
+      cursor: pointer
+      &:hover
+        background-image: url(../images/icons.svg#search-hover)
+  &-phone
+    display: inline-block
+    margin: 0 15px 0 50px
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    color: #FFFFFF;
+    flex-shrink: 0
+    &:hover
+      color: #FFCB2C;
+  &-btn
+    flex-shrink: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 2px 23px 6px
+    background: #FFCB2C;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    border: none
+    &:hover
+      opacity: 0.9
+  &-services-btn
+    position: absolute
+    top: 100%
+    left: 50%
+    transform: translateX(-50%)
+    background: #2880AC;
+    border-radius: 0px 0px 35px 35px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 4px 0 8px
+    color: #FFFFFF;
+    text-align: center
+    width: 100%
+    max-width: 1140px
+
+.popup
+  position: fixed
+  z-index: 99
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  opacity: 0
+  visibility: hidden
+  &.active
+    opacity: 1
+    visibility: visible
+  &-bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, .8);
+  &-search
+    max-width: 850px
+    width: 100%
+    position: relative
+    background: rgba(23, 28, 41, .8);
+    border-radius: 15px;
+    padding: 30px;
+    border: 10px solid rgba(255, 255, 255, .3);
+    &-form
+      display: flex
+    &-input
+      border: none;
+      width: 96%;
+      height: 45px;
+      padding: 0 2%;
+      font-size: 18px;
+      font-weight: 400;
+      color: #737373;
+      font-family: Phenomena;
+    &-submit
+      height: 45px;
+      width: 115px;
+      font-size: 26px;
+      color: #fff;
+      font-family: 'Phenomena';
+      font-weight: 800;
+      text-transform: uppercase;
+      cursor: pointer;
+      background: #eebb1f;
+      text-align: center;
+      border: none;
+      margin-left: 2px
+      &:hover
+        opacity: 0.9
+  &-close
+    position: absolute
+    background: url(../images/close-pop2.png) 0 0 no-repeat;
+    width: 13px;
+    height: 13px;
+    top: 10px;
+    right: 10px;
+    display: block;
+    cursor: pointer;
+    &:hover
+      opacity: 0.9
+  &-video
+    width: calc()
+
+
+.banner
+  background: url(../images/banner.jpg) no-repeat center
+  background-size: cover
+  &-wrapper
+    min-height: 100vh
+    padding: 150px 0
+    display: flex
+    justify-content: center
+    align-items: center
+  &-plash
+    text-align: center
+    width: 100%
+    max-width: 817px
+    background: rgba(40, 128, 172, 0.61);
+    padding: 40px 0 35px
+    position: relative
+    &-icon
+      width: 76px
+      height: 71px
+      top: -35px
+      left: calc(50% - 38px)
+      position: absolute
+      background: url(../images/logo-min.png) no-repeat center
+      background-size: contain
+    &::before
+      position: absolute
+      content: ''
+      left: 20px
+      bottom: 20px
+      height: 80px
+      width: 80px
+      border-left: 1px solid #FFCB2C;
+      border-bottom: 1px solid #FFCB2C;
+    &::after
+      position: absolute
+      content: ''
+      right: 20px
+      top: 20px
+      height: 80px
+      width: 80px
+      border-top: 1px solid #FFCB2C;
+      border-right: 1px solid #FFCB2C;
+  &-title
+    margin: 0 auto 30px
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 42px;
+    color: #FFFFFF;
+    max-width: 550px
+  &-text
+    display: block
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px
+    color: #FFFFFF;
+  &-video
+    position: absolute
+    right: -200px
+    top: calc(50% - 80px)
+    background: rgba(40, 128, 172, 0.86);
+    border-radius: 100%
+    &-btn
+      width: 160px
+      height: 160px
+      display: flex
+      align-items: center
+      justify-content: center
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 18px;
+      color: #FFFFFF;
+      text-decoration: underline
+      cursor: pointer
+      &:hover
+        text-decoration: none
+      i
+        display: block
+        width: 70px
+        height: 70px
+        margin-right: 10px
+        background: url(../images/play.png) no-repeat center
+        background-size: contain
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

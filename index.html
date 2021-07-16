@@ -1,13 +1,750 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title>Феномен - шахматная школа</title>
+  <title>Reterra - преображая пространство</title>
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <div class="site">
+    <header class="header">
+      <div class="wrapper header-wrapper flex">
+        <a href="" class="header-logo"><img src="images/logo.png" alt=""></a>
+        <ul class="header-menu">
+          <li class="header-menu-item active"><a href="">главная</a></li>
+          <li class="header-menu-item"><a href="">о компании</a></li>
+          <li class="header-menu-item"><a href="">цены</a></li>
+          <li class="header-menu-item"><a href="">галерея проектов</a></li>
+          <li class="header-menu-item"><a href="">новости</a></li>
+          <li class="header-menu-item"><a href="">отзывы</a></li>
+          <li class="header-menu-item"><a href="">наши партнеры</a></li>
+          <li class="header-menu-item"><a href="">контакты</a></li>
+        </ul>
+        <div class="header-right flex">
+          <div class="header-search">
+            <div class="header-search-btn js-search"></div>
+            <div class="popup" id="popupSearch">
+              <div class="popup-bg js-popup-close"></div>
+              <div class="popup-search">
+                <div class="popup-close js-popup-close"></div>
+                <form action="" class="popup-search-form">
+                  <input type="text" class="popup-search-input" placeholder="Найти">
+                  <input type="submit" value="Найти" class="popup-search-submit">
+                </form>
+              </div>
+            </div>
+          </div>
+          <a href="tel:8 (495) 445-75-75" class="header-phone">8 (495) 445-75-75</a>
+          <button class="header-btn">Заказать звонок</button>
+        </div>
+        
+        <a href="#services" class="header-services-btn">наши услуги</a>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="wrapper">
+        <div class="banner-wrapper">
+          <div class="banner-plash">
+            <i class="banner-plash-icon"></i>
+            <h1 class="banner-title">ПРОФЕССИОНАЛЬНЫЙ СНОС И ДЕМОНТАЖ ЗДАНИЙ И СООРУЖЕНИЙ ЛЮБОЙ СЛОЖНОСТИ!</h1>
+            <span class="banner-text">ПРЕОБРАЖАЯ ПРОСТРАНСТВО</span>
+
+            <div class="banner-video">
+              <div class="banner-video-btn js-video" data-video="Pxh9VL6GFA8">
+                <i></i>
+                Смотреть <br> фильм <br> о нас
+              </div>
+              <div class="popup" id="popupVideo">
+                <div class="popup-bg js-popup-close"></div>
+                <div class="popup-close js-popup-close"></div>
+                <div class="popup-video">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fast">
+      <div class="wrapper">
+        <strong class="fast-title">Быстрый расчет стоимости работ</strong>
+        <span class="fast-subtitle">Заполнение формы ни к чему Вас не обязывает</span>
+        <form action="" class="fast-form">
+          <div class="fast-form-flex flex">
+            <input type="text" class="input input--name fast-form-input" placeholder="Ваше имя">
+            <input type="tel" class="input input--name fast-form-input" placeholder="Ваш телефон">
+            <input type="submit" value="Отправить заявку" class="submit fast-form-submit">
+          </div>
+          <label class="check">
+            <input type="checkbox" checked>
+            <span class="check-custom"></span>
+            <span class="check-text">Отправляя информацию, Вы соглашаетесь с обработкой персональных данных</span>
+          </label>
+          <a href="" class="fast-form-sogl">Соглашение на обработку персональных данных</a>
+        </form>
+      </div>
+    </section>
+
+    <section class="snos">
+      <div class="wrapper">
+        <div class="snos-flex">
+          <span class="snos-title">Снос и демонтаж</span>
+          <a href="" class="snos-download">Скачать презентацию о компании</a>
+        </div>
+        <p class="snos-text">«РЕТЕРРА» является одной из ведущих московских строительных компаний полного цикла, что подтверждается многолетним опытом и десятками успешно сданных объектов различной сложности.</p>
+      </div>
+    </section>
+
+    <section class="section services">
+      <div class="wrapper">
+        <h2 class="section-title">Наши услуги</h2>
+        <div class="services-list">
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/1.jpg" alt=""></div>
+              <span class="service-text">Демонтаж старого дома</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/2.jpg" alt=""></div>
+              <span class="service-text">Демонтаж панельного дома</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/3.jpg" alt=""></div>
+              <span class="service-text">Демонтаж деревянного дома</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/4.jpg" alt=""></div>
+              <span class="service-text">Снос и демонтаж заводов и фабрик</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/5.png" alt=""></div>
+              <span class="service-text">Демонтаж металлолома</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/6.png" alt=""></div>
+              <span class="service-text">Демонтаж фундамента</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/7.png" alt=""></div>
+              <span class="service-text">Демонтаж железобетонных конструкций</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/8.png" alt=""></div>
+              <span class="service-text">Демонтаж кирпичных зданий</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/9.png" alt=""></div>
+              <span class="service-text">Демонтаж дымовых труб</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/10.png" alt=""></div>
+              <span class="service-text">Поэлементная разборка зданий и сооружений, включая частичный демонтаж действующих строений</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/11.png" alt=""></div>
+              <span class="service-text">Ликвидация промышленных объектов и территорий, включая демонтаж опасных объектов</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/12.png" alt=""></div>
+              <span class="service-text">Демонтаж металлоконструкций, прием и переработка</span>
+            </a>
+          </div>
+        </div>
+        <h2 class="services-title">Строительно-монтажные работы</h2>
+        <div class="services-list">
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/13.png" alt=""></div>
+              <span class="service-text">Земляные работы, разработка котлованов</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/14.png" alt=""></div>
+              <span class="service-text">Устройство шпунтового ограждения</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/15.png" alt=""></div>
+              <span class="service-text">Общестроительные работы и реконструкция</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/16.png" alt=""></div>
+              <span class="service-text">Монолитное строительство</span>
+            </a>
+          </div>
+        </div>
+        <h2 class="services-title">Прочие услуги</h2>
+        <div class="services-list">
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/17.png" alt=""></div>
+              <span class="service-text">Переработка строительных отходов</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/18.png" alt=""></div>
+              <span class="service-text">Продажа сыпучих строительных материалов</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/19.png" alt=""></div>
+              <span class="service-text">Аренда техники и оборудования</span>
+            </a>
+          </div>
+          <div class="service">
+            <a href="" class="service-container">
+              <div class="service-img"><img src="images/service/20.png" alt=""></div>
+              <span class="service-text">Вывоз строительного мусора</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="" class="services-more">Все услуги компании</a>
+      </div>
+    </section>
+
+    <section class="section etaps">
+      <div class="wrapper">
+        <h2 class="section title">Этапы демонтажа</h2>
+        <div class="etaps-list">
+          <div class="etap">
+            <div class="etap-icon etap-icon1"><i></i></div>
+            <span class="etap-text">Вы звоните нам или оставляете заявку на сайте</span>
+          </div>
+          <div class="etap">
+            <div class="etap-icon etap-icon2"><i></i></div>
+            <span class="etap-text">Согласовываем детали сделки и составляем договор</span>
+          </div>
+          <div class="etap">
+            <div class="etap-icon etap-icon3"><i></i></div>
+            <span class="etap-text">Выполнение заказа: демонтаж, загрузка, вывоз</span>
+          </div>
+          <div class="etap">
+            <div class="etap-icon etap-icon4"><i></i></div>
+            <span class="etap-text">Оплата заказа любым удобным способом</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section preim">
+      <div class="wrapper">
+        <h2 class="section-title">Наши преимущества</h2>
+        <div class="preim-list">
+          <div class="preim-block">
+            <div class="preim-item">
+              <div class="preim-item-img"><img src="images/preim1.png" alt=""></div>
+              <strong class="preim-item-title">Вы не думаете о бумажных вопросах</strong>
+              <span class="preim-item-text">Никакой бюрократии. Все согласования и разрешения наша компания берет на себя.</span>
+            </div>
+            <div class="preim-item">
+              <div class="preim-item-img"><img src="images/preim2.png" alt=""></div>
+              <strong class="preim-item-title">Минимальные цены на снос и демонтаж</strong>
+              <span class="preim-item-text">За счет полностью оптимизированного процесса, мы не несем лишних затрат. </span>
+            </div>
+          </div>
+          <div class="preim-block">
+            <div class="preim-item">
+              <div class="preim-item-img"><img src="images/preim3.png" alt=""></div>
+              <strong class="preim-item-title">Профессиональная реализация проекта</strong>
+              <span class="preim-item-text">Наша компания имеет огромный опыт, в том числе по индивидуальным проектам, по сносу зданий и сооружений в Москве. </span>
+            </div>
+          </div>
+          <div class="preim-block">
+            <div class="preim-item">
+              <div class="preim-item-img"><img src="images/preim4.png" alt=""></div>
+              <strong class="preim-item-title">Оперативное выполнение работ </strong>
+              <span class="preim-item-text">Мы обеспечиваем выполнение заказа в течение нескольких суток (если это необходимо). </span>
+            </div>
+            <div class="preim-item">
+              <div class="preim-item-img"><img src="images/preim5.png" alt=""></div>
+              <strong class="preim-item-title">Качественная работа и внимание к деталям.</strong>
+              <span class="preim-item-text">Наши мастера не только обеспечат снос строений Москвы, но и очистят территорию, убрав весь строительный мусор. </span>
+            </div>
+          </div>        
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section about">
+      <div class="wrapper">
+        <h2 class="section-title">О компании “РЕТЕРРА”</h2>
+        <div class="about-text">
+          <p>Опыт: за 5 лет работы было выполнено более 150 проектов различной сложности по всем направлениям деятельности – демонтаж, строительство, реновация, разработка проектов.</p>
+          <p>Рекомендации: мы гордимся каждым своим объектом и готовы предоставить рекомендации реальных клиентов, которые расскажут Вам о собственном опыте сотрудничества с нами.</p>
+          <p>Стабильность: в течение всей 5-летней работы мы не прекращали свою деятельность, несмотря на кризисы и различные внешние обстоятельства. Подписывая с нами договор о сотрудничестве, Вы можете быть уверены в нашей порядочности и стабильности как с юридической, так и с финансовой точки зрения.</p>
+          <p>Универсальность: мы сами, без посредников, выполняем весь цикл работ - от подготовки и согласования документации, до сдачи выполнения работ по демонтажу/реновации/строительству. Отсутствие посредников дает нам возможность гарантировать Вам качество и надежность всех работ – только мы несем ответственность за все этапы и никогда не перекладываем ее на других.</p>
+          <p>Понятное ценообразование: стоимость всех работ обсуждается «на берегу» и прописывается в договоре. В ходе работ не будет никакого «внезапного» роста цен и других сюрпризов – даже если фронт работ или его стоимость увеличивается, все это отражается в документах и предварительно согласовывается с Вами.</p>
+          <p>Собственный парк спецтехники: благодаря его наличию мы обеспечиваем Вам экономию времени и денег, которые неизбежно были бы потрачены на поиск и оплату спецтехники в аренду.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section calc">
+      <div class="wrapper">
+        <h2 class="section-title">Калькулятор рассчета стоимости демонтажа</h2>
+        <div class="calc-block">
+          <div class="calc-left">
+            <strong class="calc-title">Выберите услугу</strong>
+            <select name="service" class="calc-select">
+              <option value="vysotnoe_zdanie">Демонтаж высотных зданий</option>
+              <option value="metallokonstruktciya">Демонтаж металлоконструкций</option>
+              <option value="truby">Демонтаж труб</option>
+              <option value="zhelezobetonnye_konstruktcii">Демонтаж железобетонных конструкций</option>
+              <option value="kirpichnoe_zdanie">Демонтаж кирпичных зданий</option>
+              <option value="funtament">Демонтаж фундамента</option>
+              <option value="kapitalnoe stroenie">Демонтаж капитального строения</option>
+              <option value="metallolom">Демонтаж металлолома</option>
+            </select>
+            <div class="calc-flex">
+              <div class="calc-flex-block">
+                <strong class="calc-title">Тип здания</strong>
+                <label class="calc-check">
+                  <input type="checkbox">
+                  <span class="calc-check-custom"></span>
+                  <span class="calc-check-text">кирпичное</span>
+                </label>
+                <label class="calc-check">
+                  <input type="checkbox">
+                  <span class="calc-check-custom"></span>
+                  <span class="calc-check-text">кирпичное</span>
+                </label>
+                <label class="calc-check">
+                  <input type="checkbox">
+                  <span class="calc-check-custom"></span>
+                  <span class="calc-check-text">кирпичное</span>
+                </label>
+              </div>
+
+              <div class="calc-flex-block">
+                <label class="calc-label">
+                  <span class="calc-label-text">Длина, м</span>
+                  <input type="text" class="calc-label-input">
+                </label>
+                <label class="calc-label">
+                  <span class="calc-label-text">Ширина, м</span>
+                  <input type="text" class="calc-label-input">
+                </label>
+                <label class="calc-label">
+                  <span class="calc-label-text">Высота, м</span>
+                  <input type="text" class="calc-label-input">
+                </label>
+                <label class="calc-label disabled">
+                  <span class="calc-label-text">Тонны</span>
+                  <input type="text" class="calc-label-input">
+                </label>
+                <label class="calc-label disabled">
+                  <span class="calc-label-text">Метры</span>
+                  <input type="text" class="calc-label-input">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-result">
+            <strong class="calc-title">Результат просчета</strong>
+            <div class="calc-result-container">
+              <strong class="calc-result-title">Демонтаж высотных зданий</strong>
+              <input type="text" class="calc-result-input" value="0" readonly>
+              <span class="calc-result-input-sub">рублей</span>
+              <button class="calc-result-btn">Отправить заявку</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section works">
+      <div class="wrapper">
+        <h2 class="section-title">Примеры работ по сносу и демонтажу зданий</h2>
+        <div class="works-list">
+          <div class="work">
+            <div class="work-container">
+              <div class="work-img"><img src="images/primer1.jpg" alt=""></div>
+              <div class="work-content">
+                Комплекс работ по сносу зданий и сооружений для ООО "Level Group"
+              </div>
+              <div class="work-footer">
+                <span class="work-date">05.06.2019</span>
+                <a href="" class="work-btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <div class="work-container">
+              <div class="work-img"><img src="images/primer2.jpg" alt=""></div>
+              <div class="work-content">
+                Комплекс работ по освобождению земельного участка от зданий, строений и сооружений (полный демонтаж)
+              </div>
+              <div class="work-footer">
+                <span class="work-date">20.02.2019</span>
+                <a href="" class="work-btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <div class="work-container">
+              <div class="work-img"><img src="images/primer3.jpg" alt=""></div>
+              <div class="work-content">
+                Снос надземной части издательского дома «Литературная газета»
+              </div>
+              <div class="work-footer">
+                <span class="work-date">22.12.2018</span>
+                <a href="" class="work-btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <div class="work-container">
+              <div class="work-img"><img src="images/primer4.jpg" alt=""></div>
+              <div class="work-content">
+                Демонтаж корпусов Московского Судостроительного и Судоремонтного завода «МССЗ» (II очередь)
+              </div>
+              <div class="work-footer">
+                <span class="work-date">12.12.2018</span>
+                <a href="" class="work-btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <div class="work-container">
+              <div class="work-img"><img src="images/primer5.jpg" alt=""></div>
+              <div class="work-content">
+                Комплекс работ по благоустройству территории, вертикальной планировке и сносу объектов недвижимости на земельном участке площадью 97000 кв.м.
+              </div>
+              <div class="work-footer">
+                <span class="work-date">19.10.2018</span>
+                <a href="" class="work-btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <div class="work-container">
+              <div class="work-img"><img src="images/primer6.jpg" alt=""></div>
+              <div class="work-content">
+                Демонтаж корпусов Московского Завода киноаппаратуры «Москинап»
+              </div>
+              <div class="work-footer">
+                <span class="work-date">05.10.2018</span>
+                <a href="" class="work-btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section news">
+      <div class="wrapper">
+        <h2 class="section-title">Новости компании</h2>
+        <div class="news-list">
+          <div class="news-item">
+            <div class="news-item-container">
+              <div class="news-item-img"><img src="images/news1.jpg" alt=""></div>
+              <div class="news-item-content">
+                <strong class="news-item-title">Открытие производств: масштабные инвестиционные проекты и их важность для столичной экономики</strong>
+                <div class="news-item-text">Формирование качественной производственной  среды  и соответствующей инфраструктуры является приоритетом для властей столицы.</div>
+                <div class="news-item-footer">
+                  <span class="news-item-date">07.06.2021</span>
+                  <a href="" class="news-item-btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-item-container">
+              <div class="news-item-img"><img src="images/news2.jpg" alt=""></div>
+              <div class="news-item-content">
+                <strong class="news-item-title">Офисный квартал STONE Towers</strong>
+                <div class="news-item-text">В Белорусском деловом районе Москвы появится офисный квартал STONE Towers – это будет новое пространство для бизнеса, ориентированное на средний и крупный бизнес.</div>
+                <div class="news-item-footer">
+                  <span class="news-item-date">31.05.2021</span>
+                  <a href="" class="news-item-btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section certs">
+      <div class="wrapper">
+        <h2 class="section-title">Наши сертификаты и лицензии</h2>
+        <div class="certs-list">
+          <div class="cert">
+            <div class="cert-container">
+              <a href="images/certs/cert1.jpg" class="cert-img">
+                <img src="images/certs/cert1.jpg" alt="">
+              </a>
+              <a href="" class="cert-file" download>Лицензия МЧС</a>
+            </div>            
+          </div>
+          <div class="cert">
+            <div class="cert-container">
+              <a href="images/certs/cert2.jpg" class="cert-img">
+                <img src="images/certs/cert2.jpg" alt="">
+              </a>
+              <a href="" class="cert-file" download>Свидетельство на товарный знак</a>
+            </div>            
+          </div>
+          <div class="cert">
+            <div class="cert-container">
+              <a href="images/certs/cert3.jpg" class="cert-img">
+                <img src="images/certs/cert3.jpg" alt="">
+              </a>
+              <a href="" class="cert-file" download>Свидетельство СРО</a>
+            </div>            
+          </div>
+          <div class="cert">
+            <div class="cert-container">
+              <a href="images/certs/cert4.jpg" class="cert-img">
+                <img src="images/certs/cert4.jpg" alt="">
+              </a>
+              <a href="" class="cert-file" download>Сертификат соответствия ISO_9001</a>
+            </div>            
+          </div>
+          <div class="cert">
+            <div class="cert-container">
+              <a href="images/certs/cert5.jpg" class="cert-img">
+                <img src="images/certs/cert5.jpg" alt="">
+              </a>
+              <a href="" class="cert-file" download>Сертификат соответствия ISO_14001</a>
+            </div>            
+          </div>
+          <div class="cert">
+            <div class="cert-container">
+              <a href="images/certs/cert6.jpg" class="cert-img">
+                <img src="images/certs/cert6.jpg" alt="">
+              </a>
+              <a href="" class="cert-file" download>Сертификат соответствия OHSAS 18001</a>
+            </div>            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners">
+      <div class="wrapper">
+        <h2 class="section-title">Наши партнеры</h2>
+        <div class="partners-list">
+          <div class="partner">
+            <div class="partner-container">
+              <div class="partner-img"><img src="images/partners/level.png" alt=""></div>
+              <span class="partner-title">Level Group</span>
+            </div>
+          </div>
+          <div class="partner">
+            <div class="partner-container">
+              <div class="partner-img"><img src="images/partners/mosproject.png" alt=""></div>
+              <span class="partner-title">АО &quot;Моспроект-3&quot;</span>
+            </div>
+          </div>
+          <div class="partner">
+            <div class="partner-container">
+              <div class="partner-img"><img src="images/partners/sevensans.png" alt=""></div>
+              <span class="partner-title">ООО «Севен Санс Девелопмент» </span>
+            </div>
+          </div>
+          <div class="partner">
+            <div class="partner-container">
+              <div class="partner-img"><img src="images/partners/kfs.png" alt=""></div>
+              <span class="partner-title">ООО «КФС-ГРУПП»</span>
+            </div>
+          </div>
+          <div class="partner">
+            <div class="partner-container">
+              <div class="partner-img"><img src="images/partners/sminex.png" alt=""></div>
+              <span class="partner-title">ООО &quot;СМАЙНЭКС УПРАВЛЕНИЕ АКТИВАМИ&quot; </span>
+            </div>
+          </div>
+          <div class="partner">
+            <div class="partner-container">
+              <div class="partner-img"><img src="images/partners/pioneer.png" alt=""></div>
+              <span class="partner-title">ГК «Пионер»</span>
+            </div>
+          </div>
+          <div class="partner">
+            <div class="partner-container">
+              <div class="partner-img"><img src="images/partners/ramport.png" alt=""></div>
+              <span class="partner-title">ОАО «РАМПОРТ АЭРО»</span>
+            </div>
+          </div>
+          <div class="partner">
+            <div class="partner-container">
+              <div class="partner-img"><img src="images/partners/mssz.png" alt=""></div>
+              <span class="partner-title">ОАО «Московский судостроительный и судоремонтный завод»</span>
+            </div>
+          </div>
+          <div class="partner">
+            <div class="partner-container">
+              <div class="partner-img"><img src="images/partners/stroisvaz.png" alt=""></div>
+              <span class="partner-title">ООО «Стройсвязьконтракт»</span>
+            </div>
+          </div>
+          <div class="partner">
+            <div class="partner-container">
+              <div class="partner-img"><img src="images/partners/svargo.png" alt=""></div>
+              <span class="partner-title">ООО «Сварго групп»</span>
+            </div>
+          </div>
+          <div class="partner">
+            <div class="partner-container">
+              <div class="partner-img"><img src="images/partners/unihimtek.png" alt=""></div>
+              <span class="partner-title">АО НПО «УНИХИМТЕХ»</span>
+            </div>
+          </div>
+          <div class="partner">
+            <div class="partner-container">
+              <div class="partner-img"><img src="images/partners/mrbh.png" alt=""></div>
+              <span class="partner-title">ОАО «Московская реализационная база хлебопродуктов № 5»</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="wrapper">
+        <div class="form-block">
+          <strong class="form-title">Звоните или пишите нам и мы подберем для вас индивидуальное решение</strong>
+          <form name="iblock_add" action="/" method="POST">
+            <input type="hidden" name="sessid" id="sessid" value="72b6994838fff2bab97bfea4c2e6ad6c" />
+            <input type="text"  placeholder="Ваше имя*" name="user_name" class="pole" value="" class="form-input" required />
+            <input type="text"  placeholder="Ваш e-mail*"  name="user_email" class="pole" value="" class="form-input" required />
+            <textarea name="MESSAGE"  placeholder="Сообщение" class="form-input form-textarea" required ></textarea>
+           
+            <label class="form-check">
+              <input class="agreement-checkbox" type="checkbox" id="agreement_c_p"  name="agreement_c_p" value="" >
+              <span class="form-check-text">Нажатие кнопки "Отправить" означает согласие с настоящей <a href="/privacy-policy/" target="_blank">Политикой конфиденциальности</a></span>
+            </label>       
+               
+            <div class="form-captcha">
+              <span class="form-captcha-text">Введите слово на картинке*</span>
+              <input type="hidden" name="captcha_sid" value="04f75094003a2ee2df6c0908b6a22a95">
+              <div class="form-captcha-img">
+                <img src="/bitrix/tools/captcha.php?captcha_sid=04f75094003a2ee2df6c0908b6a22a95" width="180" height="40" alt="CAPTCHA">
+              </div>
+              <input type="text" name="captcha_word" size="30" maxlength="50" value="" class="form-captcha-input" required />
+            </div>           
+       
+            <input type="hidden" name="PARAMS_HASH" value="b546694998dfd524532218268063cc61">
+            <input type="submit" data-goalnext="BW_mail_s" data-ganext="BW_mail_s, Send"  name="submit" value="Отправить" class="form-submit">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="wrapper">
+          <span class="footer-top-title">Популярные услуги</span>
+          <ul class="footer-menu">
+            <li class="footer-menu-item"><a href="">Демонтаж металлоконструкций</a></li>
+            <li class="footer-menu-item"><a href="">Ликвидация промышленных объектов</a></li>
+            <li class="footer-menu-item"><a href="">Реновация промышленных территорий</a></li>
+            <li class="footer-menu-item"><a href="">Поэлементная разборка зданий и сооружений</a></li>
+            <li class="footer-menu-item"><a href="">Демонтаж высотных зданий</a></li>
+            <li class="footer-menu-item"><a href="">Вывоз строительного мусора</a></li>
+            <li class="footer-menu-item"><a href="">Демонтаж дымовых труб</a></li>
+            <li class="footer-menu-item"><a href="">Демонтаж кирпичных зданий</a></li>
+            <li class="footer-menu-item"><a href="">Демонтаж железобетонных конструкций</a></li>
+            <li class="footer-menu-item"><a href="">Демонтаж фундамента</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-center">
+        <div class="wrapper">
+          <div class="footer-center-wrapper flex">
+            <div class="footer-time">
+              <iframe src="https://free.timeanddate.com/clock/i5i3657o/n166/szw60/szh60/hbw0/hfc1e2638/cf100/hgr0/fav0/fiv0/mqcffcb2c/mql15/mqw4/mqd94/mhv0/mmv0/hhcbbb/hmcddd/hsceee" width="60" height="60"></iframe>
+              <div class="footer-time-text">
+                г. Москва<br>
+                C 09-00 до 20-00
+              </div>
+            </div>
+
+            <a href="#calc" class="footer-calc-btn"></a>
+
+            <a href="mailto:" class="footer-email"></a>
+
+            <span class="footer-mail-btn"></span>
+
+            <div class="socials">
+              <a href="" class="socials-item socials-item--ig"></a>
+              <a href="" class="socials-item socials-item--youtube"></a>
+              <a href="" class="socials-item socials-item--fb"></a>
+            </div>
+
+            <div class="foot-right">
+              <div class="b-log-akt">
+                <a href="https://acceptsib.ru" target="_blank">  <div class="log-akt log1">
+                    <div class="circle-line">
+                      <div class="line lin1"></div>
+                      <div class="line lin2"></div>
+                      <div class="line lin3"></div>
+                      <div class="line lin4"></div>
+                      <div class="line lin5"></div>
+                      <div class="line lin6"></div>
+                      <div class="line lin7"></div>
+                      <div class="line lin8"></div>
+                    </div>
+                    <div class="log-akt-shadow"></div>
+                        <div class="log-img"></div>
+                    </div> </a>
+              </div> 
+              <a class="design" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="wrapper footer-bottom-wrapper flex">
+          <a href="" class="footer-bottom-text footer-bottom-politic"> Политика конфиденциальности</a>
+          <span class="footer-bottom-text footer-bottom-politic">© Reterra LTD. All rights reserved. </span>
+          <a href="" class="footer-bottom-text footer-bottom-map">Карта сайта</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
   
   
   
