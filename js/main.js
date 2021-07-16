@@ -12,6 +12,7 @@ $(document).ready(function(){
   });
   $(".js-popup-close").on("click", function(){
     $(".popup").removeClass("active");
+    $("#popupVideo .popup-video").html("");
   });
 
   $(".js-butter").on("click", function(){
