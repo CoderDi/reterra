@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -12,16 +13,24 @@
     <header class="header">
       <div class="wrapper header-wrapper flex">
         <a href="" class="header-logo"><img src="images/logo.png" alt=""></a>
-        <ul class="header-menu">
-          <li class="header-menu-item active"><a href="">главная</a></li>
-          <li class="header-menu-item"><a href="">о компании</a></li>
-          <li class="header-menu-item"><a href="">цены</a></li>
-          <li class="header-menu-item"><a href="">галерея проектов</a></li>
-          <li class="header-menu-item"><a href="">новости</a></li>
-          <li class="header-menu-item"><a href="">отзывы</a></li>
-          <li class="header-menu-item"><a href="">наши партнеры</a></li>
-          <li class="header-menu-item"><a href="">контакты</a></li>
-        </ul>
+        <div class="header-menu-container" id="menu">
+          <ul class="header-menu">
+            <li class="header-menu-item active"><a href="">главная</a></li>
+            <li class="header-menu-item"><a href="">о компании</a></li>
+            <li class="header-menu-item"><a href="">цены</a></li>
+            <li class="header-menu-item"><a href="">галерея проектов</a></li>
+            <li class="header-menu-item"><a href="">новости</a></li>
+            <li class="header-menu-item"><a href="">отзывы</a></li>
+            <li class="header-menu-item"><a href="">наши партнеры</a></li>
+            <li class="header-menu-item"><a href="">контакты</a></li>
+          </ul>
+
+          <form action="" class="header-search-form">
+            <input type="text" class="popup-search-input" placeholder="Найти">
+            <input type="submit" value="Найти" class="popup-search-submit">
+          </form>
+        </div>
+        
         <div class="header-right flex">
           <div class="header-search">
             <div class="header-search-btn js-search"></div>
@@ -37,8 +46,9 @@
             </div>
           </div>
           <a href="tel:8 (495) 445-75-75" class="header-phone">8 (495) 445-75-75</a>
-          <button class="header-btn">Заказать звонок</button>
+          <button class="header-btn js-getcall">Заказать звонок</button>
         </div>
+        <div class="header-butter js-butter"><i></i></div>
         
         <a href="#services" class="header-services-btn">наши услуги</a>
       </div>
@@ -101,7 +111,7 @@
       </div>
     </section>
 
-    <section class="section services">
+    <section class="section services" id="services">
       <div class="wrapper">
         <h2 class="section-title">Наши услуги</h2>
         <div class="services-list">
@@ -317,7 +327,7 @@
       </div>
     </section>
 
-    <section class="section calc">
+    <section class="section calc" id="calc">
       <div class="wrapper">
         <h2 class="section-title">Калькулятор рассчета стоимости демонтажа</h2>
         <div class="calc-block">
@@ -334,7 +344,7 @@
               <option value="metallolom">Демонтаж металлолома</option>
             </select>
             <div class="calc-flex">
-              <div class="calc-flex-block">
+              <div class="calc-flex-checks">
                 <strong class="calc-title">Тип здания</strong>
                 <label class="calc-check">
                   <input type="checkbox">
@@ -353,7 +363,7 @@
                 </label>
               </div>
 
-              <div class="calc-flex-block">
+              <div class="calc-flex-inputs">
                 <label class="calc-label">
                   <span class="calc-label-text">Длина, м</span>
                   <input type="text" class="calc-label-input">
@@ -396,76 +406,76 @@
         <h2 class="section-title">Примеры работ по сносу и демонтажу зданий</h2>
         <div class="works-list">
           <div class="work">
-            <div class="work-container">
+            <a href="" class="work-container">
               <div class="work-img"><img src="images/primer1.jpg" alt=""></div>
               <div class="work-content">
                 Комплекс работ по сносу зданий и сооружений для ООО "Level Group"
               </div>
               <div class="work-footer">
                 <span class="work-date">05.06.2019</span>
-                <a href="" class="work-btn">Подробнее</a>
+                <span class="work-btn">Подробнее</span>
               </div>
-            </div>
+            </a>
           </div>
           <div class="work">
-            <div class="work-container">
+            <a href="" class="work-container">
               <div class="work-img"><img src="images/primer2.jpg" alt=""></div>
               <div class="work-content">
                 Комплекс работ по освобождению земельного участка от зданий, строений и сооружений (полный демонтаж)
               </div>
               <div class="work-footer">
                 <span class="work-date">20.02.2019</span>
-                <a href="" class="work-btn">Подробнее</a>
+                <span class="work-btn">Подробнее</span>
               </div>
-            </div>
+            </a>
           </div>
           <div class="work">
-            <div class="work-container">
+            <a href="" class="work-container">
               <div class="work-img"><img src="images/primer3.jpg" alt=""></div>
               <div class="work-content">
                 Снос надземной части издательского дома «Литературная газета»
               </div>
               <div class="work-footer">
                 <span class="work-date">22.12.2018</span>
-                <a href="" class="work-btn">Подробнее</a>
+                <span class="work-btn">Подробнее</span>
               </div>
-            </div>
+            </a>
           </div>
           <div class="work">
-            <div class="work-container">
+            <a href="" class="work-container">
               <div class="work-img"><img src="images/primer4.jpg" alt=""></div>
               <div class="work-content">
                 Демонтаж корпусов Московского Судостроительного и Судоремонтного завода «МССЗ» (II очередь)
               </div>
               <div class="work-footer">
                 <span class="work-date">12.12.2018</span>
-                <a href="" class="work-btn">Подробнее</a>
+                <span class="work-btn">Подробнее</span>
               </div>
-            </div>
+            </a>
           </div>
           <div class="work">
-            <div class="work-container">
+            <a href="" class="work-container">
               <div class="work-img"><img src="images/primer5.jpg" alt=""></div>
               <div class="work-content">
                 Комплекс работ по благоустройству территории, вертикальной планировке и сносу объектов недвижимости на земельном участке площадью 97000 кв.м.
               </div>
               <div class="work-footer">
                 <span class="work-date">19.10.2018</span>
-                <a href="" class="work-btn">Подробнее</a>
+                <span class="work-btn">Подробнее</span>
               </div>
-            </div>
+            </a>
           </div>
           <div class="work">
-            <div class="work-container">
+            <a href="" class="work-container">
               <div class="work-img"><img src="images/primer6.jpg" alt=""></div>
               <div class="work-content">
                 Демонтаж корпусов Московского Завода киноаппаратуры «Москинап»
               </div>
               <div class="work-footer">
                 <span class="work-date">05.10.2018</span>
-                <a href="" class="work-btn">Подробнее</a>
+                <span class="work-btn">Подробнее</span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -477,9 +487,9 @@
         <div class="news-list">
           <div class="news-item">
             <div class="news-item-container">
-              <div class="news-item-img"><img src="images/news1.jpg" alt=""></div>
+              <a href="" class="news-item-img"><img src="images/news1.jpg" alt=""></a>
               <div class="news-item-content">
-                <strong class="news-item-title">Открытие производств: масштабные инвестиционные проекты и их важность для столичной экономики</strong>
+                <a href="" class="news-item-title">Открытие производств: масштабные инвестиционные проекты и их важность для столичной экономики</a>
                 <div class="news-item-text">Формирование качественной производственной  среды  и соответствующей инфраструктуры является приоритетом для властей столицы.</div>
                 <div class="news-item-footer">
                   <span class="news-item-date">07.06.2021</span>
@@ -490,9 +500,9 @@
           </div>
           <div class="news-item">
             <div class="news-item-container">
-              <div class="news-item-img"><img src="images/news2.jpg" alt=""></div>
+              <a href="" class="news-item-img"><img src="images/news2.jpeg" alt=""></a>
               <div class="news-item-content">
-                <strong class="news-item-title">Офисный квартал STONE Towers</strong>
+                <a href="" class="news-item-title">Офисный квартал STONE Towers</a>
                 <div class="news-item-text">В Белорусском деловом районе Москвы появится офисный квартал STONE Towers – это будет новое пространство для бизнеса, ориентированное на средний и крупный бизнес.</div>
                 <div class="news-item-footer">
                   <span class="news-item-date">31.05.2021</span>
@@ -508,10 +518,10 @@
     <section class="section certs">
       <div class="wrapper">
         <h2 class="section-title">Наши сертификаты и лицензии</h2>
-        <div class="certs-list">
+        <div class="certs-list js-certs-slider">
           <div class="cert">
             <div class="cert-container">
-              <a href="images/certs/cert1.jpg" class="cert-img">
+              <a data-fancybox="certs" href="images/certs/cert1.jpg" class="cert-img">
                 <img src="images/certs/cert1.jpg" alt="">
               </a>
               <a href="" class="cert-file" download>Лицензия МЧС</a>
@@ -519,7 +529,7 @@
           </div>
           <div class="cert">
             <div class="cert-container">
-              <a href="images/certs/cert2.jpg" class="cert-img">
+              <a data-fancybox="certs" href="images/certs/cert2.jpg" class="cert-img">
                 <img src="images/certs/cert2.jpg" alt="">
               </a>
               <a href="" class="cert-file" download>Свидетельство на товарный знак</a>
@@ -527,7 +537,7 @@
           </div>
           <div class="cert">
             <div class="cert-container">
-              <a href="images/certs/cert3.jpg" class="cert-img">
+              <a data-fancybox="certs" href="images/certs/cert3.jpg" class="cert-img">
                 <img src="images/certs/cert3.jpg" alt="">
               </a>
               <a href="" class="cert-file" download>Свидетельство СРО</a>
@@ -535,7 +545,7 @@
           </div>
           <div class="cert">
             <div class="cert-container">
-              <a href="images/certs/cert4.jpg" class="cert-img">
+              <a data-fancybox="certs" href="images/certs/cert4.jpg" class="cert-img">
                 <img src="images/certs/cert4.jpg" alt="">
               </a>
               <a href="" class="cert-file" download>Сертификат соответствия ISO_9001</a>
@@ -543,7 +553,7 @@
           </div>
           <div class="cert">
             <div class="cert-container">
-              <a href="images/certs/cert5.jpg" class="cert-img">
+              <a data-fancybox="certs" href="images/certs/cert5.jpg" class="cert-img">
                 <img src="images/certs/cert5.jpg" alt="">
               </a>
               <a href="" class="cert-file" download>Сертификат соответствия ISO_14001</a>
@@ -551,7 +561,7 @@
           </div>
           <div class="cert">
             <div class="cert-container">
-              <a href="images/certs/cert6.jpg" class="cert-img">
+              <a data-fancybox="certs" href="images/certs/cert6.jpg" class="cert-img">
                 <img src="images/certs/cert6.jpg" alt="">
               </a>
               <a href="" class="cert-file" download>Сертификат соответствия OHSAS 18001</a>
@@ -565,7 +575,7 @@
     <section class="section partners">
       <div class="wrapper">
         <h2 class="section-title">Наши партнеры</h2>
-        <div class="partners-list">
+        <div class="partners-list js-partners-slider">
           <div class="partner">
             <div class="partner-container">
               <div class="partner-img"><img src="images/partners/level.png" alt=""></div>
@@ -645,28 +655,28 @@
     <section class="form">
       <div class="wrapper">
         <div class="form-block">
-          <strong class="form-title">Звоните или пишите нам и мы подберем для вас индивидуальное решение</strong>
           <form name="iblock_add" action="/" method="POST">
-            <input type="hidden" name="sessid" id="sessid" value="72b6994838fff2bab97bfea4c2e6ad6c" />
-            <input type="text"  placeholder="Ваше имя*" name="user_name" class="pole" value="" class="form-input" required />
-            <input type="text"  placeholder="Ваш e-mail*"  name="user_email" class="pole" value="" class="form-input" required />
-            <textarea name="MESSAGE"  placeholder="Сообщение" class="form-input form-textarea" required ></textarea>
-           
-            <label class="form-check">
-              <input class="agreement-checkbox" type="checkbox" id="agreement_c_p"  name="agreement_c_p" value="" >
-              <span class="form-check-text">Нажатие кнопки "Отправить" означает согласие с настоящей <a href="/privacy-policy/" target="_blank">Политикой конфиденциальности</a></span>
-            </label>       
-               
-            <div class="form-captcha">
-              <span class="form-captcha-text">Введите слово на картинке*</span>
-              <input type="hidden" name="captcha_sid" value="04f75094003a2ee2df6c0908b6a22a95">
-              <div class="form-captcha-img">
-                <img src="/bitrix/tools/captcha.php?captcha_sid=04f75094003a2ee2df6c0908b6a22a95" width="180" height="40" alt="CAPTCHA">
-              </div>
-              <input type="text" name="captcha_word" size="30" maxlength="50" value="" class="form-captcha-input" required />
-            </div>           
-       
-            <input type="hidden" name="PARAMS_HASH" value="b546694998dfd524532218268063cc61">
+            <div class="form-container">
+              <strong class="form-title">Звоните или пишите нам и мы подберем для вас индивидуальное решение</strong>
+              <input type="text"  placeholder="Ваше имя*" name="user_name" class="form-input" required />
+              <input type="text"  placeholder="Ваш e-mail*"  name="user_email" class="form-input" required />
+              <textarea name="MESSAGE"  placeholder="Сообщение" class="form-input form-textarea" required ></textarea>
+            
+              <label class="form-check">
+                <input class="agreement-checkbox" type="checkbox" id="agreement_c_p"  name="agreement_c_p" value="" >
+                <span class="form-check-custom"></span>
+                <span class="form-check-text">Нажатие кнопки "Отправить" означает согласие с настоящей <a href="/privacy-policy/" target="_blank">Политикой конфиденциальности</a></span>
+              </label>       
+                
+              <div class="form-captcha">
+                <span class="form-captcha-text">Введите слово на картинке*</span>
+                <input type="hidden" name="captcha_sid" value="04f75094003a2ee2df6c0908b6a22a95">
+                <div class="form-captcha-img">
+                  <img src="images/captcha.php.jpg" width="180" height="40" alt="CAPTCHA">
+                </div>
+                <input type="text" name="captcha_word" size="30" maxlength="50" value="" class="form-captcha-input" required />
+              </div>           
+            </div>
             <input type="submit" data-goalnext="BW_mail_s" data-ganext="BW_mail_s, Send"  name="submit" value="Отправить" class="form-submit">
           </form>
         </div>
@@ -678,6 +688,7 @@
         <div class="wrapper">
           <span class="footer-top-title">Популярные услуги</span>
           <ul class="footer-menu">
+            <li class="footer-menu-item"><a href="">Снос и демонтаж зданий и строений</a></li>
             <li class="footer-menu-item"><a href="">Демонтаж металлоконструкций</a></li>
             <li class="footer-menu-item"><a href="">Ликвидация промышленных объектов</a></li>
             <li class="footer-menu-item"><a href="">Реновация промышленных территорий</a></li>
@@ -705,9 +716,12 @@
 
             <a href="#calc" class="footer-calc-btn"></a>
 
-            <a href="mailto:" class="footer-email"></a>
+            <a href="mailto:INFO@RETERRA.RU" class="footer-email">INFO@RETERRA.RU</a>
 
-            <span class="footer-mail-btn"></span>
+            <span class="footer-mail-btn js-getmail"><i></i> написать письмо</span>
+
+            <a href="tel:8(499) 110-89-46" class="footer-phone-mobile">8(499) 110-89-46</a>
+            <a href="#calc" class="footer-calc-btn-mobile">Калькулятор</a>
 
             <div class="socials">
               <a href="" class="socials-item socials-item--ig"></a>
@@ -715,7 +729,7 @@
               <a href="" class="socials-item socials-item--fb"></a>
             </div>
 
-            <div class="foot-right">
+            <div class="footer-right">
               <div class="b-log-akt">
                 <a href="https://acceptsib.ru" target="_blank">  <div class="log-akt log1">
                     <div class="circle-line">
@@ -741,18 +755,63 @@
       <div class="footer-bottom">
         <div class="wrapper footer-bottom-wrapper flex">
           <a href="" class="footer-bottom-text footer-bottom-politic"> Политика конфиденциальности</a>
-          <span class="footer-bottom-text footer-bottom-politic">© Reterra LTD. All rights reserved. </span>
+          <span class="footer-bottom-text">© Reterra LTD. All rights reserved. </span>
           <a href="" class="footer-bottom-text footer-bottom-map">Карта сайта</a>
         </div>
       </div>
     </footer>
 
+    <a class="up">
+      <i></i>
+      Вверх
+    </a>
+
+  </div>
+
+  <div class="popup" id="popupCall">
+    <div class="popup-bg js-popup-close"></div>
+    <div class="popup-content">
+      <div class="popup-close js-popup-close"></div>
+      <form action="" class="popup-form">
+        <span class="popup-title">Заказать звонок</span>
+        <input type="text" class="input input--name popup-form-input" placeholder="Ваше имя">
+        <input type="tel" class="input input--phone popup-form-input" placeholder="Ваш телефон">
+            
+        <label class="check popup-check">
+          <input type="checkbox" checked>
+          <span class="check-custom"></span>
+          <span class="check-text">Отправляя информацию, Вы соглашаетесь с обработкой персональных данных</span>
+        </label>
+        <input type="submit" value="Отправить заявку" class="btn submit popup-form-submit">
+      </form>
+    </div>
+  </div>
+
+  <div class="popup" id="popupMail">
+    <div class="popup-bg js-popup-close"></div>
+    <div class="popup-content">
+      <div class="popup-close js-popup-close"></div>
+      <form action="" class="popup-form">
+        <span class="popup-title">написать письмо</span>
+        <input type="text" class="input input--name popup-form-input" placeholder="Ваше имя">
+        <input type="tel" class="input input--phone popup-form-input" placeholder="Ваш телефон">
+        <textarea name="MESSAGE"  placeholder="Сообщение" class="input popup-form-input popup-form-textarea" required ></textarea>
+        
+        <label class="check popup-check">
+          <input type="checkbox" checked>
+          <span class="check-custom"></span>
+          <span class="check-text">Отправляя информацию, Вы соглашаетесь с обработкой персональных данных</span>
+        </label>
+        <input type="submit" value="Отправить заявку" class="btn submit popup-form-submit">
+      </form>
+    </div>
   </div>
   
   
   
   <script src="libs/jquery/jquery-3.3.1.min.js"></script>
   <script src="libs/slick/slick.min.js"></script>
+  <script src="libs/fancybox/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>  
 </body>
 </html>

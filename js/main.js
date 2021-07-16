@@ -3,6 +3,17 @@
 
 
 $(document).ready(function(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 200) {
+      $(".up").addClass("active");
+    } else {
+      $(".up").removeClass("active");
+    }
+  });
+  $(".up").on("click", function(){
+    $('html,body').stop().animate({ scrollTop: 0 }, 1000);
+    
+  });
   $(".js-video").on("click", function(){
     $("#popupVideo .popup-video").html("").append('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/'+ $(this).data("video") + '?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
     $("#popupVideo").addClass("active");
@@ -13,6 +24,12 @@ $(document).ready(function(){
   $(".js-popup-close").on("click", function(){
     $(".popup").removeClass("active");
     $("#popupVideo .popup-video").html("");
+  });
+  $(".js-getcall").on("click", function(){
+    $("#popupCall").addClass("active");
+  });
+  $(".js-getmail").on("click", function(){
+    $("#popupMail").addClass("active");
   });
 
   $(".js-butter").on("click", function(){
@@ -29,6 +46,49 @@ $(document).ready(function(){
 
   $(function() {
     $("[type=tel]").mask("+7 (999) 999-99-99");
+  });
+
+  $(".js-certs-slider").slick({
+    slidesToShow: 3,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+  $(".js-partners-slider").slick({
+    slidesToShow: 5,
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
  
 });
